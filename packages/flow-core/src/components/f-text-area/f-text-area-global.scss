@@ -2,7 +2,7 @@
 @import "./f-text-area-variables";
 
 f-text-area {
-	width: 100%;
+	flex: 1 0 auto;
 	&[disabled] {
 		@include disabled();
 	}
@@ -10,5 +10,11 @@ f-text-area {
 		&[state="#{$state}"] {
 			@include input-color($state);
 		}
+	}
+}
+
+f-div[direction="column"] {
+	> f-text-area {
+		width: 100%;
 	}
 }

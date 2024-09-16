@@ -3,7 +3,7 @@
 @import "./f-file-upload-variables";
 
 f-file-upload {
-	width: 100%;
+	flex: 1 0 auto;
 	&[disabled] {
 		@include disabled();
 	}
@@ -11,5 +11,11 @@ f-file-upload {
 		&[state="#{$state}"] {
 			@include input-color($state);
 		}
+	}
+}
+
+f-div[direction="column"] {
+	> f-file-upload {
+		width: 100%;
 	}
 }

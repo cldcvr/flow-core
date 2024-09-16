@@ -27,6 +27,12 @@ f-form-group[direction="vertical"] {
 	> f-date-time-picker {
 		width: 100%;
 	}
+	> f-text-area {
+		width: 100%;
+	}
+	> f-file-upload {
+		width: 100%;
+	}
 }
 
 f-div[direction="row"],
@@ -37,8 +43,8 @@ f-form-group[direction="horizontal"] {
 	> f-select,
 	> f-suggest,
 	> f-date-time-picker {
-		width: 100%;
-		flex: initial;
+		// width: 100%;
+		flex: 1 0 auto;
 	}
 	> .label-left-layout {
 		width: auto !important;

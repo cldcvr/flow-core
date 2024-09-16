@@ -204,7 +204,6 @@ export class FFormGroup extends FRoot {
 								.gap=${this.variant === "compact" && this.direction === "horizontal"
 									? "none"
 									: this.gap}
-								overflow="scroll"
 							>
 								<slot></slot>
 							</f-div>

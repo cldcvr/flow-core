@@ -8,7 +8,7 @@
 }
 
 f-input {
-	width: 100%;
+	flex: 1 0 auto;
 	&[disabled] {
 		@include disabled();
 		opacity: 1;
@@ -17,6 +17,12 @@ f-input {
 		&[state="#{$state}"] {
 			@include input-color($state);
 		}
+	}
+}
+
+f-div[direction="column"] {
+	> f-input {
+		width: 100%;
 	}
 }
 
